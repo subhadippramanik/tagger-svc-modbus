@@ -14,7 +14,7 @@ import gw.bif.tagger.modbus.enricher.ModbusTagEnricher;
 public class TaggerModbusController {
 	
 	@Autowired
-	ModbusTagEnricher modbusTagEnricher;
+	private ModbusTagEnricher modbusTagEnricher;
 		
 	@RequestMapping(value = "/modbus", method = RequestMethod.POST)
 	public Map<String, String> modbus(@RequestBody Map<String, String> message) {		
